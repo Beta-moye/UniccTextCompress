@@ -1,5 +1,5 @@
 def s2f(str):
-    strDict = {}  #定义字典
+    strDict = {}  #定义字典以计数
     #给文本每个字计数
     for i in range(len(str)):
         if strDict.get(str[i]) == None:
