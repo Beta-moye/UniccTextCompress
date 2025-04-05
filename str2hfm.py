@@ -18,6 +18,7 @@ def s2f(str):
         l2 = rtlst[0][1]
         L1 = rtlst[1][0]
         L2 = rtlst[1][1]
+        #这里因为有时重复使用列表内元组的值有时会删错项，所以定义四个变量后面调用
         rtlst.append(('['+ l1 +L1 +']',l2 + L2))
         rtlst.remove((l1,l2))
         rtlst.remove((L1,L2))
