@@ -22,3 +22,4 @@ def s2f(str):
         rtlst.remove((l1,l2))
         rtlst.remove((L1,L2))
     return rtlst
+#输出的是一个由列表嵌套列表组成的霍夫曼树
