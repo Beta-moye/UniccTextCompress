@@ -23,11 +23,12 @@ def cptext(str0,str1,Dic):
         int1 = int1[equ:]
         ret =  ('3' * (len(int0)+1)) + tocom(int1)
     return ret
-#比对并提交合适的路径
+#比对并提交合适的路径（1为列表第一项，2为列表第二项，3为返回，4为到最顶层，5为重复录入）
 def s2c(Str,Dic):
     restr = ''
     for i in range(len(Str)-1):
         text = cptext(Str[i],Str[i+1],Dic)
         restr += text
+        restr = tocom(Dic[Str[0]]) + restr
     return restr
 #主函数
